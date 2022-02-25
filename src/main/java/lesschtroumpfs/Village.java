@@ -10,7 +10,7 @@ import java.util.ArrayList;
  */
 public class Village {
 	
-	//D�claration des variables 
+	//Declaration des variables 
 	private String nomV;
 	private int StockSalsepareille;
 	private ArrayList<Schtroumpf> schtroumpfs;
@@ -24,7 +24,7 @@ public class Village {
 	    this.nombreSchtroumpfs = nomsDesSchtroumpfs.length;
 	     
 	        
-	    /*Cr�� et ajoute les Schtroumpfs*/
+	    /*Cree et ajoute les Schtroumpfs*/
 	    for (int i=0; i<this.nombreSchtroumpfs; i++) {
 	        this.schtroumpfs.add(i, (new Schtroumpf(nomsDesSchtroumpfs[i],(int)(Math.random()*150),this)));
 	    }
@@ -61,7 +61,7 @@ public class Village {
 	     /**
 	     * Permet de faire une presentation de chaque Schtroumpf au sein d'une liste 
 	     * Permet egalement de faire chanter les Schtroumpf
-	     * Cette proc�dure affiche a l'ecran les deux elements cites au dessus.
+	     * Cette procedure affiche a l'ecran les deux elements cites au dessus.
 	     */
 	    public void solstice_d_ete() {
 	    	 int NbSchtHeureux = 0 ;
@@ -128,7 +128,7 @@ public class Village {
 	     
 	     /**
 	     * Permet d'aggrandir le stock de salePareille du village 
-	     * @param pfSalePareilleEnPlus : le nombre de salePareille � ajouter
+	     * @param pfSalePareilleEnPlus : le nombre de salePareille a ajouter
 	     */
 	    public void setStockSalePareille(int pfSalePareilleEnPlus) {
 	    	 this.StockSalsepareille +=  pfSalePareilleEnPlus;
